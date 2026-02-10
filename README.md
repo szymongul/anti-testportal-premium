@@ -10,6 +10,16 @@ Join our Discord! https://discord.gg/HPecVXeQrF
 
 [<img width="250" src="https://i.imgur.com/ZeD4O9a.png" alt="anti-testportal">](https://i.imgur.com/ZeD4O9a.png)
 
+## Compile from source
+> [!WARNING]
+> I have little to no experience with TypeScript so all that in this section was a result of like 18 minutes of research... I made it work for me but i have no idea how universal/correct that is
+1. Make sure you have webpack installed `sudo npm install -g webpack`
+2. Also install [yarn](https://yarnpkg.com/) however you do on your distro; for arch it's `sudo pacman -S yarn`
+3. now run `npm run build` in the root directory
+4. If you get an error that looks like this `Error: error:0308010C:digital envelope routines::unsupported
+` it might help to do `export NODE_OPTIONS=--openssl-legacy-provider` and re run the npm command
+5. Now all files you need will be in `./dist/` so do what [Usage](#usage) section tells you, starting from step 3
+
 ## Usage
 
 [Unofficial extension in Chrome web store](https://chrome.google.com/webstore/detail/anti-testportal/dpgfbfopkfdfmlfdpmoanamopdnibhkl)
